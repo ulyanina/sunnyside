@@ -1,0 +1,20 @@
+@import 'libs/null';
+@import 'libs/fonts';
+@import 'base/variables';
+
+// @import "libs/animate";
+
+body {
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+@import 'blocks/promo';
+@import 'blocks/features';
+@import 'blocks/testimonials';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+// @import "base/media";

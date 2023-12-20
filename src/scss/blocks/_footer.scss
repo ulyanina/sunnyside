@@ -1,0 +1,13 @@
+.footer {
+   background: #90d4c6;
+   color: #2C7566;
+   width: 1440px;
+   margin: auto;
+   padding-bottom: 20px;
+   text-align: center;
+   & a {
+      text-align: center;
+      color: #2C7566;
+      text-decoration: underline;
+   }
+}

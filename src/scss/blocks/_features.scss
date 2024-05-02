@@ -7,8 +7,8 @@
    &__grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(160px, 720px));
-      // grid-template-rows: repeat(3, minmax(150px, 600px));
-      grid-template-rows: repeat(3, 600px);
+      grid-template-rows: repeat(2, minmax(100px, auto)) 600px;
+      // grid-template-rows: repeat(3, 600px);
       grid-auto-rows: 600px;
    }
 
@@ -26,8 +26,8 @@
    }
 
    &__content {
-      // padding: 157px 106px 158px 165px;
-      padding: 10px;
+      // padding: 10px;
+      padding: 155px 10px;
       // max-width: 445px;
       max-width: 64.5%;
       display: flex;

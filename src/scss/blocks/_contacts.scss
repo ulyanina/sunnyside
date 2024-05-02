@@ -12,12 +12,11 @@
 
    &__info {
       height: 348px;
-      padding: 72px 571px 0 572px;
+      padding: 72px 535px 0 535px;
       background: #90d4c6;
       display: flex;
       flex-direction: column;
       align-items: center;
-    
    }
 
    &__logo {
@@ -29,8 +28,8 @@
 
    &__links {
       display: flex;
-      gap: 57px;
-      margin-bottom: 88px;
+      gap: 37px;
+      margin-bottom: 81px;
       & li {
          & a {
             color: #458d7e;
@@ -39,18 +38,23 @@
             font-weight: 600;
             line-height: 25px;
             letter-spacing: -0.129px;
+            padding: 10px;
          }
       }
    }
 
    &__socials {
-      width: 164px;
-      height: 20px;
+      width: 178px;
+      height: 35px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 100px;
+      gap: 12px;
+      margin-bottom: 85px;
    }
 
    &__social {
+      & img {
+         padding: 7px;
+      }
    }
 }

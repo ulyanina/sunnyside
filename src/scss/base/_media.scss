@@ -42,7 +42,7 @@
 }
 @media (max-width: 992px) {
    .promo {
-      background: url('../../img/promo/image-header-smaller.jpg') center center / cover no-repeat;
+      background: url('../img/promo/image-header-smaller.jpg') center center / cover no-repeat;
       &__heading {
          font-size: calc(24px + 32 * ((100vw - 320px) / (1440 - 320)));
       }
@@ -151,18 +151,62 @@
          font-size: calc(24px + 32 * (100vw - 320px) / 1120);
          line-height: 38px;
       }
+      &__arrow {
+         &-none {
+            display: none;
+         }
+      }
    }
    .menu {
       display: none;
+      &-active {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         // padding: 63px 0 38px;
+         // width: 329px;
+         height: 329px;
+         min-width: 328px;
+         background: url('../img/promo/menu_bg.png') 50% 505% / cover no-repeat;
+         position: absolute;
+         top: 105px;
+         left: 50%;
+         transform: translateX(-50%);
+         animation: menu-opacity 0.5s;
+      }
+      &__item {
+         margin-top: 32px;
+         & a {
+            font-size: 20px;
+            line-height: 25px;
+            // padding-top: 36px;
+            color: #808397;
+         }
+         &:last-child {
+            & a {
+               background: $main-yellow;
+               font-family: Fraunces;
+               font-weight: 700;
+               font-size: 15px;
+               text-transform: uppercase;
+               width: 140px;
+               height: 56px;
+            }
+         }
+      }
    }
    .hamburger {
       display: block;
+      padding: 10px;
       & span {
          display: block;
-         background-color: $main-black;
-         width: 35px;
-         height: 4px;
-         margin-bottom: 3px;
+         background-color: #fff;
+         width: 24px;
+         height: 2px;
+         margin-bottom: 6px;
+         &:last-child {
+            margin-bottom: 0;
+         }
       }
    }
    .features {
@@ -292,6 +336,11 @@
    .promo {
       &__heading {
          line-height: 33px;
+      }
+   }
+   .menu {
+      &-active {
+         min-width: 260px;
       }
    }
    .features {

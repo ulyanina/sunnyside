@@ -1,5 +1,18 @@
-//TODO script_menu_ & _hamburger:
-/*
+window.addEventListener('DOMContentLoaded', () => {
+   const humburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu'),
+      arrow = document.querySelector('.promo__arrow');
+
+humburger.addEventListener('click', () => {
+   menu.classList.toggle('menu-active');
+   arrow.classList.toggle('promo__arrow-none');
+});
+   
+
+   
+})
+
+   /*
 // first variant of menu
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
@@ -26,21 +39,10 @@ window.addEventListener('DOMContentLoaded', () => {
             veil.classList.toggle('presentation-veil');
         })
     })
-})
 
-//second variant of menu
-const humburger = document.querySelector('.humburger'),
-   menu = document.querySelector('.menu'),
-   closeBtn = document.querySelector('.menu__close');
-
-humburger.addEventListener('click', () => {
-   menu.classList.add('active');
-});
-closeBtn.addEventListener('click', () => {
-   menu.classList.remove('active');
-});
 */
-
+//second variant of menu
+ 
 //TODO script_validation:
 /*
 //validation

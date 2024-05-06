@@ -21,7 +21,7 @@
       }
       &__text-16 {
          font-size: calc(12px + 6 * ((100vw - 320px) / (1440 - 320)));
-         line-height: calc(12px + 15 * ((100vw - 320px) / (1440 - 320)));
+         line-height: calc(14px + 17 * ((100vw - 320px) / (1440 - 320)));
       }
    }
    .testimonials {
@@ -230,6 +230,10 @@
          font-size: 12px;
          padding-left: 6px;
       }
+      &__desc{
+         width: 80%;
+         bottom: 7%;
+      }
       &__title {
          margin-bottom: 9px;
       }
@@ -282,7 +286,7 @@
    .features {
       &__grid {
          // grid-template-rows: repeat(3, 235px);
-         grid-template-rows: repeat(2, minmax(100px, auto)) 235px;
+         grid-template-rows: repeat(2, minmax(100px, auto)) 276px;
       }
       &__content {
          max-width: 84%;
@@ -300,8 +304,8 @@
          padding-bottom: 2px;
       }
       &__desc {
-         width: 83%;
-         bottom: 5%;
+         width: 85%;
+         bottom: 6%;
       }
       &__title {
          margin-bottom: 9px;
@@ -317,8 +321,13 @@
       }
    }
    .testimonials {
+      padding: 68px 25px 60px;
+      &__title {
+         font-size: 17px;
+         margin-bottom: 45px;
+      }
       &__item {
-         width: 90%;
+         width: 44%;
       }
    }
    .contacts {
@@ -400,6 +409,11 @@
       &__text-16 {
          font-size: 16px;
          line-height: 27px;
+      }
+   }
+   .testimonials {
+      &__item {
+         width: 88%;
       }
    }
    .contacts {

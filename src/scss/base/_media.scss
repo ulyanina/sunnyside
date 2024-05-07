@@ -148,6 +148,11 @@
          margin-bottom: 50px;
       }
    }
+   .contacts {
+      &__info {
+         height: 325px;
+      }
+   }
 }
 @media (max-width: 576px) {
    .promo {
@@ -230,7 +235,7 @@
          font-size: 12px;
          padding-left: 6px;
       }
-      &__desc{
+      &__desc {
          width: 80%;
          bottom: 7%;
       }
@@ -324,7 +329,7 @@
       padding: 68px 25px 60px;
       &__title {
          font-size: 17px;
-         margin-bottom: 45px;
+         margin-bottom: 60px;
       }
       &__item {
          width: 44%;
@@ -334,6 +339,9 @@
       &__gallery {
          grid-template-columns: repeat(2, 50%);
          grid-template-rows: repeat(2, 50%);
+      }
+      &__info {
+         height: 290px;
       }
       &__logo {
          margin-bottom: 27px;

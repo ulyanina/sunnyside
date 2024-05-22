@@ -41,6 +41,9 @@
             line-height: 25px;
             letter-spacing: -0.129px;
             padding: 10px;
+            &:hover {
+               color: #fff;
+            }
          }
       }
    }
@@ -55,8 +58,13 @@
    }
 
    &__social {
-      & img {
-         padding: 7px;
+      padding: 7px;
+      & svg {
+         & path {
+            &:hover {
+               fill: #fff;
+            }
+         }
       }
    }
 }

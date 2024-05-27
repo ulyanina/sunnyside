@@ -1,11 +1,13 @@
+
 window.addEventListener('DOMContentLoaded', () => {
-   const humburger = document.querySelector('.hamburger'),
+   const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       arrow = document.querySelector('.promo__arrow');
 
-humburger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
    menu.classList.toggle('menu-active');
    arrow.classList.toggle('promo__arrow-none');
+   hamburger.classList.toggle('hamburger-active');
 });
    
 

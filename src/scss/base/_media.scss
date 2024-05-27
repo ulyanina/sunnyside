@@ -246,10 +246,26 @@
             margin-bottom: 0;
          }
       }
+      &-active{
+         padding: 18px 10px;
+         & span {
+            width: 26px;
+            margin-bottom: -2px;
+            &:nth-child(1) {
+               transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+               display: none;
+            }
+            &:nth-child(3) {
+               transform: translateY(3px) rotate(45deg);
+            }
+         }
+      }
    }
+
    .features {
       &__grid {
-         // grid-template-rows: repeat(3, 300px);
          grid-template-rows: repeat(2, minmax(100px, auto)) 300px;
       }
       &__content {
